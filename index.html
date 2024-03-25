@@ -32,8 +32,6 @@
     <link rel="shortcut icon" href="./img/favicon/favicon.svg" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- script js -->
-    <script src="./assets/js/main.js"></script>
 
 </head>
 
@@ -46,28 +44,32 @@
             <span class="logo__text">WisePanda.fr</span>
         </a>
 
-        <!-- Premier bouton call-to-action -->
         <nav>
             <ul>
-                <li><a class="btn__cta" href="#">Prévenez-moi !</a></li>
+                <li><a class="btn__cta show__newsletter"  href="#">Prévenez-moi !</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- SECTION PRINCIPALE -->
     <section>
+        <!-- Image SVG Wave-->
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#718096" fill-opacity="1"
                 d="M0,288L60,240C120,192,240,96,360,74.7C480,53,600,107,720,144C840,181,960,203,1080,181.3C1200,160,1320,96,1380,64L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
 
+        <!-- Contenu Landing Page -->
         <div class="contentBox">
             <h2>Bientôt en ligne</h2>
             <p>Notre site web est en construction, nous travaillons dur pour vous offrir la meilleure expérience
-                possible! Restez informé pour découvrir quelque chose d'extraordinaire.Inscrivez-vous à notre newsletter
+                possible! <br>
+                Restez informé pour découvrir quelque chose d'extraordinaire. <br>
+                Inscrivez-vous à notre newsletter
             </p>
-
-            <!-- Compteur de jour restant en javascript -->
+  
+            <!-- Compteur de jour restant en JS -->
             <div class="countDown">
                 <div class="time">
                     <div class="day">236</div><span>Jours</span>
@@ -76,18 +78,18 @@
                     <div class="hour">1</div><span>Heures</span>
                 </div>
                 <div class="time">
-                    <div class="minute">50</div><span>Minutes</span>
+                    <div class="minute">35</div><span>Minutes</span>
                 </div>
                 <div class="time">
-                    <div class="second">26</div><span>Secondes</span>
+                    <div class="second">46</div><span>Secondes</span>
                 </div>
             </div>
 
-            <!-- Deuxième bouton call-to-action -->
-            <a class="btn__cta" href="#">Prévenez-moi !</a>
+            <a class="btn__cta show__newsletter"  href="#">Prévenez-moi !</a>
 
         </div>
 
+        <!-- Image du panda-ramen -->
         <div class="imgBox">
             <img src="./img/section/panda-ramen.png" alt="panda qui mange des ramens sur le ventre">
         </div>
@@ -95,27 +97,42 @@
 
     <!-- NEWSLETTER -->
     <div class="newsletter">
+        <div class="newsletter__title">
         <h2>Restez connectés</h2>
         <p>Soyez informé du lancement</p>
-
+        </div>
         <!-- Formulaire pour la newsletter -->
-        <div class="inputBox">
+        <div class="newsletter__form">
             <form action="">
-              <input type="email" name="" placeholder="botre@email.com" required>  
+              <input type="email" name="" placeholder="Votre@email.com" required>  
               <input type="submit" value="M'abonner">
             </form>
         </div>
 
+        <!-- Politique de confidentialité RGPD -->
+        <div class="newsletter__policy">
+
+        </div>
+        <p>En renseignant votre adresse email, vous acceptez de recevoir chaque semaine nos derniers articles de blog par courrier électronique et vous prenez connaissance de notre <a href="#">Politque de confifentialité</a>
+        </p>
+        <p>
+            Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en nous contactant à l'adresse policy@wisepanda.fr
+        </p>
         <!-- Image pour la fermeture du formulaire -->
-        <img class="close" src="./img/section/close.png" alt="Image pour fermer le formulaire">
+        <img class="close show__newsletter"  src="./img/section/close.png" alt="Image fermeture formulaire">
     </div>
 
     <!-- FOOTER -->
     <footer>
         <div class="copy">
-            Tous droits réservés &copy; <a href="#" target="_blank">Tony@R</a> | 2024
+            <p>
+                Tous droits réservés &copy; <a href="#" target="_blank">Tony@R</a> | 2021 -<span id="current-year">2023</span>
+            </p>
         </div>
     </footer>
+
+    <!-- MON SCRIPT JS -->
+   <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
