@@ -95,7 +95,9 @@ section {
     min-height: 100vh;
     padding: 0 90px;
 }
+/* CSS du contenu principal de la page */
 
+/* CSS du texte principal de la page */
 section .contentBox {
     position: relative;
     max-width: 600px;
@@ -113,6 +115,7 @@ section .contentBox p {
     color: var(--couleur-titre);
 }
 
+/* CSS du compte à rebours */
 section .contentBox .countDown {
     display: flex;
     margin: 20px 0px;
@@ -140,6 +143,7 @@ section .contentBox .countDown .time span {
     color: var(--couleur-principale);
 }
 
+/* CSS des boutons CTA */
 section .contentBox a {
     position: relative;
     margin-top: 2px;
@@ -153,6 +157,8 @@ section .contentBox a {
     border-radius: 40px;
 }
 
+
+/* CSS de l'image  */
 section .imgBox img {
     position: relative;
     max-width: 900px;
@@ -161,6 +167,7 @@ section .imgBox img {
     z-index: 2;
 }
 
+/* CSS de la vague */
 section  .wave {
     position: absolute;
     bottom: 0;
@@ -169,7 +176,7 @@ section  .wave {
     pointer-events: none;
 }
 
-/* NEWSLETTTE */
+/* NEWSLETTTEr */
 
 .newsletter {
     position: fixed;
@@ -186,7 +193,7 @@ section  .wave {
     opacity: 0;
     transition: 0.5s;
 }
-
+/* CSS de la visibilité du prompt Newsletter */
 .newsletter.active {
     visibility: visible;
     opacity: 1;
@@ -202,6 +209,7 @@ section  .wave {
     color: var(--couleur-principale);
 }
 
+/* CSS du formulaire de la newsletter */
 .newsletter .newsletter__form {
     margin-top: 20px;
 }
@@ -233,6 +241,7 @@ section  .wave {
     font-size: rem;
 }
 
+/* CSS de la croix pour refremer le prompt */
 .newsletter .close {
     position: absolute;
     top: 20px;
@@ -261,13 +270,21 @@ footer .copy a {
     text-decoration: none;
     color: var(--couleur-principale)
 }
-
+ /* CSS de l'effet de soulignement au passage de la souris */
 footer .copy a:hover {
     text-decoration: underline;
     color: var(--couleur-principale);
 }
 
+
+/*  Création des MEDIA QUERIES pour le responsive de la Landing Page */
+
+/* CSS pour les écrans < 1100px */
 @media (max-width: 1100px) {
+
+    /* body {
+        min-height: 100vh;
+    } */
 
     section {
         flex-direction: column;
@@ -284,7 +301,12 @@ footer .copy a:hover {
     }
 }
 
+/* CSS pour les écrans allant < 750px */
 @media (max-width: 750px) {
+
+    /* body {
+        min-height: 100vh;
+    } */
 
     section .contentBox {
         margin-top: 35%;
@@ -305,7 +327,11 @@ footer .copy a:hover {
     }
 }
 
+/* CSS pour les écrans < 550px */
 @media (max-width: 550px) {
+    /* body {
+        min-height: 100vh;
+    } */
 
     header {
         display: flex;
@@ -358,7 +384,13 @@ footer .copy a:hover {
    }
 }
 
+/* CSS pour les écrans < 400px */
 @media (max-width: 400px) {
+/* 
+    body {
+        min-height: 100vh;
+    } */
+
     section .contentBox {
         margin-top: 300px;
     }
